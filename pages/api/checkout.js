@@ -20,8 +20,6 @@ export default async (req, res) => {
       model: 'Product',
     });
     // calculate cart totals again from cart products
-
-    console.log(cart.products);
     const { cartTotal, stripeTotal } = calculateCartTotal(cart.products);
     // get email from payment data, see if email linked with existing Stripe customer
     const prevCustomer = await stripe.customers.list({

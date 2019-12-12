@@ -59,7 +59,6 @@ function CreateProduct() {
 
       setLoading(false);
 
-      console.log({ response });
       setProduct(INITIAL_PRODUCT);
       setSuccess(true);
     } catch (error) {

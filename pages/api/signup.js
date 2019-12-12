@@ -10,7 +10,6 @@ connectDb();
 
 export default async (req, res) => {
   const { name, email, password } = req.body;
-  console.log(req.body);
   try {
     // Validate name, email, password
     if (!isLength(name, { min: 3, max: 10 })) {
