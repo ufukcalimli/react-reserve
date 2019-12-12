@@ -1,4 +1,4 @@
 const baseUrl =
-  process.env.NODE_ENV === 'production' ? 'http://localhost:3000' : 'https://ikea.now.sh';
+  process.env.NODE_ENV === 'production' ? 'https://ikea.now.sh' : 'http://localhost:3000';
 
 export default baseUrl;
