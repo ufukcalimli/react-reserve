@@ -51,7 +51,7 @@ function Signup() {
         attached
         icon='privacy'
         header='Welcome back!'
-        content='Log in with email and password'
+        content='Login with email and password'
         color='blue'
       />
       <Form error={Boolean(error)} loading={loading} onSubmit={handleSubmit}>
